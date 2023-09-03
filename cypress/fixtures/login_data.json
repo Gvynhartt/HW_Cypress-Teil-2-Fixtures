@@ -1,0 +1,14 @@
+{
+    "admin":{
+        "name": "Teh Admin",
+        "email": "qamid@qamid.ru",
+        "password": "qamid",
+        "URL": "http://qamid.tmweb.ru/admin"
+    },
+
+    "ADMINGUS":{
+        "name": "Admin is Sus",
+        "email": "shiny@metal.aez",
+        "password": "olUrBaes_1337_f4kt_6y_U$"
+    }
+}

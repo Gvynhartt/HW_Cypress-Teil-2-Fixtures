@@ -1,0 +1,10 @@
+{
+    "movieNameFromAdminPlanner": "div.conf-step__movies h3.conf-step__movie-title",
+    "navDayTomorrow": "nav.page-nav a.page-nav__day:nth-of-type(2)",
+    "movieSectionParent": "section.movie",
+    "movieSeanceTime": "a.movie-seances__time",
+    "buttonConfirm": "button.acceptin-button",
+    "ticketMovieTitle": "span.ticket__title.ticket__details",
+    "ticketQRcode": "img.ticket__info-qr",
+    "multichipTicketCollector": "p:nth-of-type(6)"
+}

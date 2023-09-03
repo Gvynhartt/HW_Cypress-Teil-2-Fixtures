@@ -1,0 +1,6 @@
+{
+    "inputEmail": "label[for=email] input[name=email]",
+    "inputPassword": "label[for=pwd] input[name=password]",
+    "buttonSignIn": "div.text-center input.login__button",
+    "adminLobbySubttl": "header.page-header span.page-header__subtitle"
+}
