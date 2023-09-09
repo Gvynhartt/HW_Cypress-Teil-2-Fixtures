@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:group1": "cypress run --spec \"cypress/e2e/get_name_from_admin_book_seat.cy.js\" --record --key 7090b4de-2e7e-4eef-bcd8-f7ecc5ae82bd --group get-name --ci-build-id 09.IX-1.5",
+    "cy:group2": "cypress run --spec \"cypress/e2e/admin_login.cy.js\" --record --key 7090b4de-2e7e-4eef-bcd8-f7ecc5ae82bd --group admin-login --ci-build-id 09.IX-1.5",
+    "cy:group3": "cypress run --spec \"cypress/e2e/homepg_display.cy.js\" --record --key 7090b4de-2e7e-4eef-bcd8-f7ecc5ae82bd --group home-display --ci-build-id 09.IX-1.5",
+    "cy:parallel": "npm run cy:group1 --group name-from-planner --ci-build-id 09.IX-1.2 & npm run cy:group2 --group admin-login --ci-build-id 09.IX-1.2 & npm run cy:group3 --group home-visible --ci-build-id 09.IX-1.2",
+    "cy:para2": "npx cypress run --record --key 7090b4de-2e7e-4eef-bcd8-f7ecc5ae82bd --group get-name-planner --spec \"cypress/e2e/get_name_from_admin_book_seat.cy.js\" --ci-build-id 09.IX-1.3 & npx cypress run --record --key 7090b4de-2e7e-4eef-bcd8-f7ecc5ae82bd --group home-visible --spec \"cypress/e2e/homepg_display.cy.js\" --ci-build-id 09.IX-1.3 &npx cypress run --record --key 7090b4de-2e7e-4eef-bcd8-f7ecc5ae82bd --group admin-login --spec \"cypress/e2e/admin_login.cy.js\" --ci-build-id 09.IX-1.3",
+    "cy:run-all": "run-p -c cy:group1 cy:group2 cy:group3"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.1.0"
+    "cypress": "^13.1.0",
+    "npm-run-all": "^4.1.5"
   }
 }
