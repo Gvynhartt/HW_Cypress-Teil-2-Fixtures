@@ -1,3 +1,4 @@
 {
-    "navDay": "a.page-nav__day"
+    "navDay": "a.page-nav__day",
+    "navTodayChosen": "a.page-nav__day.page-nav__day_today.page-nav__day_chosen"
 }
